@@ -4333,6 +4333,26 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "FichaAcademia.AcessoDados/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/FichaAcademia.AcessoDados.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FichaAcademia.AcessoDados.dll": {}
+        }
+      },
+      "FichaAcademia.Dominio/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/FichaAcademia.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FichaAcademia.Dominio.dll": {}
+        }
       }
     }
   },
@@ -11798,10 +11818,22 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "FichaAcademia.AcessoDados/1.0.0": {
+      "type": "project",
+      "path": "../FichaAcademia.AcessoDados/FichaAcademia.AcessoDados.csproj",
+      "msbuildProject": "../FichaAcademia.AcessoDados/FichaAcademia.AcessoDados.csproj"
+    },
+    "FichaAcademia.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../FichaAcademia.Dominio/FichaAcademia.Dominio.csproj",
+      "msbuildProject": "../FichaAcademia.Dominio/FichaAcademia.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "FichaAcademia.AcessoDados >= 1.0.0",
+      "FichaAcademia.Dominio >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0"
@@ -11814,11 +11846,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
       "projectName": "FichaAcademia",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\FichaAcademia\\FichaAcademia\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11836,7 +11868,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj"
+            },
+            "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -11873,5 +11912,25 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project FichaAcademia.Dominio is not compatible with netcoreapp2.1 (.NETCoreApp,Version=v2.1). Project FichaAcademia.Dominio supports: netcoreapp2.2 (.NETCoreApp,Version=v2.2)",
+      "libraryId": "FichaAcademia.Dominio",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project FichaAcademia.AcessoDados is not compatible with netcoreapp2.1 (.NETCoreApp,Version=v2.1). Project FichaAcademia.AcessoDados supports: netcoreapp2.2 (.NETCoreApp,Version=v2.2)",
+      "libraryId": "FichaAcademia.AcessoDados",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
