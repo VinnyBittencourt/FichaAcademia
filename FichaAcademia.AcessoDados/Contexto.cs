@@ -1,4 +1,5 @@
-﻿using FichaAcademia.Dominio.Models;
+﻿using FichaAcademia.AcessoDados.Mapeamentos;
+using FichaAcademia.Dominio.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,24 @@ namespace FichaAcademia.AcessoDados
         public DbSet<Objetivo> Objetivos { get; set; }
         public DbSet<Professor> Professores{ get; set; }
 
+        //install-package Microsoft.EntityFrameworkCore.Relational -version 2.1 para resolver o problema com a versão
+        //install-package Microsoft.EntityFrameworkCore.SqlServer
+
         public Contexto(DbContextOptions<Contexto> opcoes) :base(opcoes)
         {
 
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new AdministradoresMap());
+            modelBuilder.ApplyConfiguration(new AlunoMap());
+            modelBuilder.ApplyConfiguration(new CategoriaExercicioMap());
+            modelBuilder.ApplyConfiguration(new ExercicioMap());
+            modelBuilder.ApplyConfiguration(new FichaMap());
+            modelBuilder.ApplyConfiguration(new ListaExercicioMap());
+            modelBuilder.ApplyConfiguration(new ObjetivoMap());
+            modelBuilder.ApplyConfiguration(new ProfessorMap());
         }
     }
 }
