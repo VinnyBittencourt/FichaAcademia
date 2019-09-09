@@ -11,6 +11,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FichaAcademia.AcessoDados;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Rotativa.AspNetCore;
 
 namespace FichaAcademia
 {
@@ -57,7 +59,7 @@ namespace FichaAcademia
                 app.UseHsts();
             }
             app.UseSession();
-            app.UseAthentication();
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

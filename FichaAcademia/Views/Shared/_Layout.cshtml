@@ -1,5 +1,6 @@
-﻿@using Microsoft.AspNetCore.Http
-@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccesor
+﻿
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
 <!DOCTYPE html>
 <html>
@@ -26,7 +27,7 @@
             <a href="#" class="brand-logo">Fichas de Academia</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
 
-                @if (!User.Identity.isAuthenticated)
+                @if (!User.Identity.IsAuthenticated)
                 {
                     <li><a asp-controller="Administradores" asp-action="Login">Login</a></li>
                 }
@@ -34,12 +35,11 @@
                 {
                     <li><a asp-controller="Objetivos" asp-action="Index">Objetivos</a></li>
                     <li><a asp-controller="Exercicios" asp-action="Index">Exercicios</a></li>
-                    <li><a asp-controller="CategoriaExercicios" asp-action="Index">Categorias</a></li>
+                    <li><a asp-controller="CategoriasExercicios" asp-action="Index">Categorias</a></li>
                     <li><a asp-controller="Professores" asp-action="Index">Professores</a></li>
                     <li><a asp-controller="Alunos" asp-action="Index">Alunos</a></li>
-                    <li> Bem-Vindo(a), @HttpContextAccessor.HttpContext.Session.GetString("Usuario")</li>
+                    <li>Bem vindo, @HttpContextAccessor.HttpContext.Session.GetString("Usuario")</li>
                     <li><a asp-controller="Administradores" asp-action="Logout">Logout</a></li>
-
                 }
             </ul>
         </div>
