@@ -16,12 +16,9 @@ namespace FichaAcademia.AcessoDados
         public DbSet<Ficha> Fichas { get; set; }
         public DbSet<ListaExercicio> ListasExercicios { get; set; }
         public DbSet<Objetivo> Objetivos { get; set; }
-        public DbSet<Professor> Professores{ get; set; }
+        public DbSet<Professor> Professores { get; set; }
 
-        //install-package Microsoft.EntityFrameworkCore.Relational -version 2.1 para resolver o problema com a versão
-        //install-package Microsoft.EntityFrameworkCore.SqlServer
-
-        public Contexto(DbContextOptions<Contexto> opcoes) :base(opcoes)
+        public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
         {
 
         }
@@ -39,3 +36,8 @@ namespace FichaAcademia.AcessoDados
         }
     }
 }
+
+
+
+//install-package Microsoft.EntityFrameworkCore.Relational -version 2.1 para resolver o problema com a versão
+//install-package Microsoft.EntityFrameworkCore.SqlServer -version 2.1
