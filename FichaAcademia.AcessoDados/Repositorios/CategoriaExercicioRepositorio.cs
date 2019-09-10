@@ -17,6 +17,11 @@ namespace FichaAcademia.AcessoDados.Repositorios
             _contexto = contexto;
         }
 
+        public async Task<bool> CategoriaExiste(string categoria)
+        {
+            return await _contexto.CategoriasExercicios.AnyAsync(ce => ce.Nome == categoria);
+        }
+
         public async Task<bool> CategoriaExiste(string categoria, int CategoriaExercicioId)
         {
             return await _contexto.CategoriasExercicios.AnyAsync(ce => ce.Nome == categoria && ce.CategoriaExercicioId != CategoriaExercicioId);
