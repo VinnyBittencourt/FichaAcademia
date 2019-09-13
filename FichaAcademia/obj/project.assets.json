@@ -1,6 +1,7 @@
 {
   "version": 3,
   "targets": {
+<<<<<<< HEAD
     ".NETCoreApp,Version=v2.1": {
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
@@ -4635,6 +4636,14 @@
           "FichaAcademia.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0"
+=======
+    ".NETCoreApp,Version=v2.2": {
+      "FichaAcademia.AcessoDados/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "FichaAcademia.Dominio": "1.0.0"
+>>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
         },
         "compile": {
           "bin/placeholder/FichaAcademia.AcessoDados.dll": {}
@@ -4645,10 +4654,14 @@
       },
       "FichaAcademia.Dominio/1.0.0": {
         "type": "project",
+<<<<<<< HEAD
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc": "2.1.0"
         },
+=======
+        "framework": ".NETCoreApp,Version=v2.2",
+>>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
         "compile": {
           "bin/placeholder/FichaAcademia.Dominio.dll": {}
         },
@@ -4659,6 +4672,7 @@
     }
   },
   "libraries": {
+<<<<<<< HEAD
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -12572,6 +12586,8 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+=======
+>>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
     "FichaAcademia.AcessoDados/1.0.0": {
       "type": "project",
       "path": "../FichaAcademia.AcessoDados/FichaAcademia.AcessoDados.csproj",
@@ -12586,32 +12602,36 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "FichaAcademia.AcessoDados >= 1.0.0",
+<<<<<<< HEAD
       "FichaAcademia.Dominio >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
       "Rotativa.AspNetCore >= 1.1.1"
+=======
+      "FichaAcademia.Dominio >= 1.0.0"
+>>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\Vinny\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
+      "projectUniqueName": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
       "projectName": "FichaAcademia",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\obj\\",
+      "projectPath": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
+      "packagesPath": "C:\\Users\\Vinny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vinny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12624,11 +12644,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj"
+            "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj": {
+              "projectPath": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj"
             },
-            "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj"
+            "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj"
             }
           }
         }
@@ -12640,6 +12660,7 @@
       }
     },
     "frameworks": {
+<<<<<<< HEAD
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.AspNetCore.App": {
@@ -12668,6 +12689,9 @@
             "version": "[1.1.1, )"
           }
         },
+=======
+      "netcoreapp2.2": {
+>>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
         "imports": [
           "net461"
         ],
