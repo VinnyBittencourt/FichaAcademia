@@ -1,7 +1,6 @@
 {
   "version": 3,
   "targets": {
-<<<<<<< HEAD
     ".NETCoreApp,Version=v2.1": {
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
@@ -4636,14 +4635,6 @@
           "FichaAcademia.Dominio": "1.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "2.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0"
-=======
-    ".NETCoreApp,Version=v2.2": {
-      "FichaAcademia.AcessoDados/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "FichaAcademia.Dominio": "1.0.0"
->>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
         },
         "compile": {
           "bin/placeholder/FichaAcademia.AcessoDados.dll": {}
@@ -4654,14 +4645,10 @@
       },
       "FichaAcademia.Dominio/1.0.0": {
         "type": "project",
-<<<<<<< HEAD
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
           "Microsoft.AspNetCore.Mvc": "2.1.0"
         },
-=======
-        "framework": ".NETCoreApp,Version=v2.2",
->>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
         "compile": {
           "bin/placeholder/FichaAcademia.Dominio.dll": {}
         },
@@ -4672,7 +4659,6 @@
     }
   },
   "libraries": {
-<<<<<<< HEAD
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -7857,6 +7843,7 @@
       "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -7884,6 +7871,7 @@
       "path": "runtime.native.system.net.http/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -7910,6 +7898,7 @@
       "path": "runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -7949,6 +7938,7 @@
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512",
@@ -8477,6 +8467,7 @@
       "path": "system.composition/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "system.composition.1.0.31.nupkg.sha512",
@@ -8489,6 +8480,7 @@
       "path": "system.composition.attributedmodel/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.AttributedModel.dll",
@@ -8503,6 +8495,7 @@
       "path": "system.composition.convention/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.Convention.dll",
@@ -8517,6 +8510,7 @@
       "path": "system.composition.hosting/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.Hosting.dll",
@@ -8545,6 +8539,7 @@
       "path": "system.composition.typedparts/1.0.31",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.TypedParts.dll",
@@ -8670,6 +8665,7 @@
       "path": "system.diagnostics.contracts/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9296,6 +9292,7 @@
       "path": "system.io/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10225,6 +10222,7 @@
       "path": "system.reflection.emit/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10260,6 +10258,7 @@
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10304,6 +10303,7 @@
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11190,6 +11190,7 @@
       "path": "system.security.claims/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11575,6 +11576,7 @@
       "path": "system.security.principal/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11960,6 +11962,7 @@
       "path": "system.threading/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12051,6 +12054,7 @@
       "path": "system.threading.tasks/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12157,6 +12161,7 @@
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12586,8 +12591,6 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-=======
->>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
     "FichaAcademia.AcessoDados/1.0.0": {
       "type": "project",
       "path": "../FichaAcademia.AcessoDados/FichaAcademia.AcessoDados.csproj",
@@ -12602,36 +12605,32 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "FichaAcademia.AcessoDados >= 1.0.0",
-<<<<<<< HEAD
       "FichaAcademia.Dominio >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
       "Rotativa.AspNetCore >= 1.1.1"
-=======
-      "FichaAcademia.Dominio >= 1.0.0"
->>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vinny\\.nuget\\packages\\": {},
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
       "projectName": "FichaAcademia",
-      "projectPath": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
-      "packagesPath": "C:\\Users\\Vinny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\FichaAcademia.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vinny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12644,11 +12643,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj": {
-              "projectPath": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj"
+            "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.AcessoDados\\FichaAcademia.AcessoDados.csproj"
             },
-            "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj": {
-              "projectPath": "C:\\Users\\Vinny\\Documents\\GitHub\\fichaAcademia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj"
+            "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia.Dominio\\FichaAcademia.Dominio.csproj"
             }
           }
         }
@@ -12660,7 +12659,6 @@
       }
     },
     "frameworks": {
-<<<<<<< HEAD
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.AspNetCore.App": {
@@ -12689,9 +12687,6 @@
             "version": "[1.1.1, )"
           }
         },
-=======
-      "netcoreapp2.2": {
->>>>>>> 905d45a4f10c8333a47a8ad868eb0e2227897809
         "imports": [
           "net461"
         ],
@@ -12699,5 +12694,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Usuario\\Documents\\Academia\\FichaAcademia\\FichaAcademia\\obj\\FichaAcademia.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
