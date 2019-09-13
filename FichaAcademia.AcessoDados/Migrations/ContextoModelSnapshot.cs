@@ -15,7 +15,7 @@ namespace FichaAcademia.AcessoDados.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
+                .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -158,7 +158,7 @@ namespace FichaAcademia.AcessoDados.Migrations
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasMaxLength(500);
+                        .HasMaxLength(300);
 
                     b.Property<string>("Nome")
                         .IsRequired()
@@ -210,7 +210,7 @@ namespace FichaAcademia.AcessoDados.Migrations
             modelBuilder.Entity("FichaAcademia.Dominio.Models.Exercicio", b =>
                 {
                     b.HasOne("FichaAcademia.Dominio.Models.CategoriaExercicio", "CategoriaExercicio")
-                        .WithMany("Exercicio")
+                        .WithMany("Exercicios")
                         .HasForeignKey("CategoriaExercicioId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

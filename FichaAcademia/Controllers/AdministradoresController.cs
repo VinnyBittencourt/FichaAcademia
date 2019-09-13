@@ -26,7 +26,7 @@ namespace FichaAcademia.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            if (User.Identity.IsAuthenticated)
+            if(User.Identity.IsAuthenticated)
             {
                 HttpContext.SignOutAsync();
                 HttpContext.Session.Clear();
@@ -37,7 +37,7 @@ namespace FichaAcademia.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(AdministradorViewModel administradorViewModel)
         {
-            if (!_administradorRepositorio.AdministradorExiste(administradorViewModel.Email, administradorViewModel.Senha))
+            if(! _administradorRepositorio.AdministradorExiste(administradorViewModel.Email, administradorViewModel.Senha))
             {
                 ModelState.AddModelError(string.Empty, "Email e/ou senhas inválidos");
                 return View(administradorViewModel);

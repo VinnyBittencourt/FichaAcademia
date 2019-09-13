@@ -1,5 +1,6 @@
 ﻿using FichaAcademia.Dominio.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,13 +9,13 @@ namespace FichaAcademia.AcessoDados.Mapeamentos
 {
     public class CategoriaExercicioMap : IEntityTypeConfiguration<CategoriaExercicio>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<CategoriaExercicio> builder)
+        public void Configure(EntityTypeBuilder<CategoriaExercicio> builder)
         {
-            builder.HasKey(c => c.CategoriaExercicioId);
+            builder.HasKey(ce => ce.CategoriaExercicioId);
 
-            builder.Property(c => c.Nome).IsRequired();
+            builder.Property(ce => ce.Nome).HasMaxLength(50).IsRequired();
 
-            builder.HasMany(c => c.Exercicio).WithOne(c => c.CategoriaExercicio).OnDelete(DeleteBehavior.Cascade);
+            builder.HasMany(ce => ce.Exercicios).WithOne(ce => ce.CategoriaExercicio).OnDelete(DeleteBehavior.Cascade);
 
             builder.ToTable("CategoriasExercicios");
         }

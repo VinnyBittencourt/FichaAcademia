@@ -18,9 +18,10 @@ namespace FichaAcademia.AcessoDados.Mapeamentos
             builder.Property(f => f.Validade).IsRequired();
 
             builder.HasOne(f => f.Aluno).WithMany(f => f.Fichas).HasForeignKey(f => f.AlunoId);
-            builder.HasMany(f => f.ListaExercicios).WithOne(f => f.Ficha).HasForeignKey(f => f.ListaExercicioId);
+            builder.HasMany(f => f.ListaExercicios).WithOne(f => f.Ficha).OnDelete(DeleteBehavior.Cascade);
 
             builder.ToTable("Fichas");
+
         }
     }
 }

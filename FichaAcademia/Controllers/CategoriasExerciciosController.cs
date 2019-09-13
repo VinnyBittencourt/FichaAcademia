@@ -8,9 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using FichaAcademia.AcessoDados;
 using FichaAcademia.Dominio.Models;
 using FichaAcademia.AcessoDados.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FichaAcademia.Controllers
 {
+    [Authorize]
     public class CategoriasExerciciosController : Controller
     {
         private readonly ICategoriaExercicioRepositorio _categoriaExercicioRepositorio;
@@ -26,15 +28,11 @@ namespace FichaAcademia.Controllers
             return View(_categoriaExercicioRepositorio.PegarTodos());
         }
 
-        // GET: CategoriasExercicios/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: CategoriasExercicios/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CategoriaExercicioId,Nome")] CategoriaExercicio categoriaExercicio)
@@ -47,14 +45,8 @@ namespace FichaAcademia.Controllers
             return View(categoriaExercicio);
         }
 
-        // GET: CategoriasExercicios/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var categoriaExercicio = await _categoriaExercicioRepositorio.PegarPeloId(id);
             if (categoriaExercicio == null)
             {
@@ -63,9 +55,6 @@ namespace FichaAcademia.Controllers
             return View(categoriaExercicio);
         }
 
-        // POST: CategoriasExercicios/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("CategoriaExercicioId,Nome")] CategoriaExercicio categoriaExercicio)
@@ -76,42 +65,34 @@ namespace FichaAcademia.Controllers
             }
 
             if (ModelState.IsValid)
-            {
-                
+           {
                 await _categoriaExercicioRepositorio.Atualizar(categoriaExercicio);
-                
                 return RedirectToAction(nameof(Index));
             }
             return View(categoriaExercicio);
-        }
-
+        }       
         
-
-        // POST: CategoriasExercicios/Delete/5
         [HttpPost]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<JsonResult> Delete(int id)
         {
             await _categoriaExercicioRepositorio.Excluir(id);
-            return RedirectToAction(nameof(Index));
+            return Json("Categoria excluída com sucesso");
         }
 
-        public async Task<JsonResult> CategoriaExiste(string nome, int CategoriaExercicioId)
+       public async Task<JsonResult> CategoriaExiste(string nome, int CategoriaExercicioId)
         {
-            if (CategoriaExercicioId == 0)
+            if(CategoriaExercicioId == 0)
             {
-                if(await _categoriaExercicioRepositorio.CategoriaExiste(nome))
-                {
-                    return Json("Categoria Já existe.");
-                }
+                if (await _categoriaExercicioRepositorio.CategoriaExiste(nome))
+                    return Json("Categoria já existe");
 
-                return Json(true);
+                return Json(true);                
             }
+
             else
             {
                 if(await _categoriaExercicioRepositorio.CategoriaExiste(nome, CategoriaExercicioId))
-                {
-                    return Json("Categoria Já existe.");
-                }
+                    return Json("Categoria já existe");
 
                 return Json(true);
             }

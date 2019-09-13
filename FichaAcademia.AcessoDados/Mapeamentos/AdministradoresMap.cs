@@ -17,9 +17,6 @@ namespace FichaAcademia.AcessoDados.Mapeamentos
             builder.Property(a => a.Email).IsRequired();
             builder.Property(a => a.Senha).IsRequired();
 
-            //install-package Microsoft.EntityFrameworkCore.Relational <- Para fazer o ToTable funcionar. Lembrando que
-            //tem que escolher o AcessoDados no Package Manager Console na hora de instalar.
-
             builder.ToTable("Administradores");
         }
     }

@@ -20,7 +20,7 @@ namespace FichaAcademia.AcessoDados
 
         public Contexto(DbContextOptions<Contexto> opcoes) : base(opcoes)
         {
-
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -36,8 +36,3 @@ namespace FichaAcademia.AcessoDados
         }
     }
 }
-
-
-
-//install-package Microsoft.EntityFrameworkCore.Relational -version 2.1 para resolver o problema com a versão
-//install-package Microsoft.EntityFrameworkCore.SqlServer -version 2.1

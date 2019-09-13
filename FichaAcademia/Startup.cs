@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FichaAcademia.AcessoDados;
+using FichaAcademia.AcessoDados.Interfaces;
+using FichaAcademia.AcessoDados.Repositorios;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -10,11 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using FichaAcademia.AcessoDados;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Rotativa.AspNetCore;
-using FichaAcademia.AcessoDados.Interfaces;
-using FichaAcademia.AcessoDados.Repositorios;
 
 namespace FichaAcademia
 {
@@ -35,8 +35,13 @@ namespace FichaAcademia
             services.AddTransient<ICategoriaExercicioRepositorio, CategoriaExercicioRepositorio>();
             services.AddTransient<IAdministradorRepositorio, AdministradorRepositorio>();
             services.AddTransient<IExercicioRepositorio, ExercicioRepositorio>();
+            services.AddTransient<IProfessorRepositorio, ProfessorRepositorio>();
+            services.AddTransient<IObjetivoRepositorio, ObjetivoRepositorio>();
+            services.AddTransient<IAlunoRepositorio, AlunoRepositorio>();
+            services.AddTransient<IFichaRepositorio, FichaRepositorio>();
+            services.AddTransient<IListaExercicioRepositorio, ListaExercicioRepositorio>();
 
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
 
             services.AddSession(opcoes =>
             {
@@ -64,13 +69,13 @@ namespace FichaAcademia
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+
             app.UseSession();
             app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             RotativaConfiguration.Setup(env);
-            
 
             app.UseMvc(routes =>
             {

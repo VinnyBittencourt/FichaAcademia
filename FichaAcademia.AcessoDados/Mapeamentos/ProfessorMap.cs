@@ -1,5 +1,6 @@
 ﻿using FichaAcademia.Dominio.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,7 +9,7 @@ namespace FichaAcademia.AcessoDados.Mapeamentos
 {
     public class ProfessorMap : IEntityTypeConfiguration<Professor>
     {
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Professor> builder)
+        public void Configure(EntityTypeBuilder<Professor> builder)
         {
             builder.HasKey(p => p.ProfessorId);
 
